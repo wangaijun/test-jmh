@@ -27,7 +27,7 @@ public class LinkedListIterationBenchMark {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.Throughput)
+    @BenchmarkMode(Mode.AverageTime)
     public void forIndexIterate() {
         for (int i = 0; i < list.size(); i++) {
             list.get(i);
@@ -36,7 +36,7 @@ public class LinkedListIterationBenchMark {
     }
 
     @Benchmark
-    @BenchmarkMode(Mode.Throughput)
+    @BenchmarkMode(Mode.AverageTime)
     public void forEachIterate() {
         for (String s : list) {
             System.out.print("");
